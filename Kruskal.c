@@ -137,7 +137,10 @@ void PrintMatr(int *Matr)
 	{
 		for (size_t j = 0; j < N; j++)
 		{
-			printf("%d, ", Matr[i * N + j]);
+			if(j == N - 1)
+				printf("%d", Matr[i * N + j]);
+			else
+				printf("%d, ", Matr[i * N + j]);
 		}
 		printf("\n");
 	}
